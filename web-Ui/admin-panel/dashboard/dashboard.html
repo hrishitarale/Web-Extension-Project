@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+				initial-scale=1.0">
+    <title>Admin | Dashboard</title>
+    <link rel="stylesheet" href="../../assets/style-css/admin-dashboard.css">
+    <link rel="stylesheet" href="../../assets/style-css/admin-dashborad-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <!-- for header part -->
+    <header>
+
+        <div class="logosec">
+            <div class="logo">Dashboard</div>
+
+            <span id="menuicn">
+                <i class="fas fa-bars menuicn fa-lg"></i>
+            </span>
+        </div>
+
+        <div class="searchbar">
+            <input type="text" name="searchNav" id="searchBox_I" placeholder="Search name...">
+            <div class="searchbtn">
+                <img src="../../assets/images/search-icon.png" class="icn srchicn" alt="search-icon">
+            </div>
+        </div>
+
+        <div class="message">
+            <!-- <div class="circle"></div> -->
+            <div class="dp" id="signOut">
+                <i class="fas fa-sign-out-alt dpicn"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <i class="fas fa-tachometer-alt fa-lg"></i>
+                        <h4>Dashboard</h4>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="searchbar2">
+                <input type="text" name="searchBody" id="searchBox_II" placeholder="Search name...">
+                <div class="searchbtn">
+                    <img src="../../assets/images/search-icon.png" class="icn srchicn" alt="search-button">
+                </div>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box box1">
+                    <div class="text">
+                        <h3 class="topic-heading" id="totalUser">0</h3>
+                        <h3 class="topic">Total User</h3>
+                    </div>
+                    <i class="fas fa-users fa-lg"></i>
+                </div>
+
+                <div class="box box3">
+                    <div class="text">
+                        <h3 class="topic-heading" id="dWords">0</h3>
+                        <h3 class="topic">Total dictionary<br />search words</h3>
+                    </div>
+                    <i class="fas fa-spell-check fa-lg"></i>
+                </div>
+
+                <div class="box box4">
+                    <div class="text">
+                        <h3 class="topic-heading" id="tSentence">0</h3>
+                        <h3 class="topic">Total translation<br />search sentence</h3>
+                    </div>
+                    <i class="fas fa-language fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="report-container">
+                <div class="report-header">
+                    <h2 class="recent-Articles">Recent Articles</h2>
+                </div>
+                <div style="height: 300px; overflow:auto; margin-top: 3.5px;">
+                    <table class="fixed" id="catTable">
+                        <thead>
+                            <tr>
+                                <th style="cursor: default !important;">Sr. No.</th>
+                                <th data-sort="username">Name</th>
+                                <th data-sort="email">Email</th>
+                                <th data-sort="phone">Phone</th>
+                                <th style="cursor: default !important;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4"><i>Loading...</i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="report-footer">
+                    <button class="view" id="prevButton"><i class="fas fa-angle-double-left fa-lg"></i></button>
+                    <div class="custom-select">
+                        <button class="select-button" role="combobox" aria-labelledby="select button"
+                            aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
+                            <span class="selected-value">5</span>
+                            <span class="arrow"></span>
+                        </button>
+                        <ul class="select-dropdown" role="listbox" id="select-dropdown">
+                            <li role="option">
+                                <input type="radio" id="5" name="social-account" />
+                                <label for="5">5</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="10" name="social-account" />
+                                <label for="10">10</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="30" name="social-account" />
+                                <label for="30">30</label>
+                            </li>
+                            <li role="option">
+                                <input type="radio" id="50" name="social-account" />
+                                <label for="50">50</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="view" id="nextButton"><i class="fas fa-angle-double-right fa-lg"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="../../assets/javaScript/api-call.service.js"></script>
+    <script type="text/javascript" src="../../assets/javaScript/admin-dashboard.js"></script>
+</body>
+
+</html>

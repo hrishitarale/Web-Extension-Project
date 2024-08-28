@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/style-css/login-style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <div>
+                <h1>Sign In</h1>
+                <span>or use your email password</span>
+                <div class="input-group">
+                    <input type="email" required id="admin_Email" placeholder="Email">
+                    <label for="admin_Email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required id="admin_Password" placeholder="Password">
+                    <label for="admin_Password">Password</label>
+                </div>
+                <!-- <div class="remember">
+                    <label><input type="checkbox"> Remember me</label>
+                </div> -->
+                <div id="errorMessagesA" style="color: red; font-size: 13px;"></div>
+                <button id="adminLoginForm">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../assets/javaScript/login-validation.service.js"></script>
+    <script type="text/javascript" src="../../assets/javaScript/api-call.service.js"></script>
+    <script type="text/javascript" src="../../assets/javaScript/admin-login.js"></script>
+</body>
+
+</html>

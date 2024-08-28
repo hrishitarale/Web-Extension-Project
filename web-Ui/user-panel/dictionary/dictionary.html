@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dictionary</title>
+  <link rel="stylesheet" href="../../assets/style-css/dictionary-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN Link for Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+  integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+  crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+  <link rel="stylesheet" href="../../assets/style-css/nav-bar-style.css">
+</head>
+
+<body>
+  <div class="body-D">
+    <div class="wrapper">
+      <div class="navigation">
+        <ul>
+          <li id="welcome_active" class="list">
+            <a id="welcome">
+              <span class="icon">
+                <i class="fas fa-spa"></i>
+              </span>
+              <span class="text">Welcome</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="translator_active" class="list">
+            <a id="translator">
+              <span class="icon">
+                <i class="fas fa-language"></i>
+              </span>
+              <span class="text">Translator</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="dictionary_active" class="list">
+            <a id="dictionary">
+              <span class="icon">
+                <i class="fas fa-spell-check"></i>
+              </span>
+              <span class="text">Dictionary</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="profile_active" class="list">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-user-tie"></i>
+              </span>
+              <span class="text">Profile</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="settings_active" class="list">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-power-off"></i>
+              </span>
+              <span class="text">Logout</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+
+      <header>English Dictionary</header>
+      <div class="search">
+        <input type="text" placeholder="Search a word" required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+      <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+      <ul class="ul">
+        <li class="word li">
+          <div class="details">
+            <p>__</p>
+            <span>_ _</span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list"></div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript" src="../../assets/javaScript/nav-bar-script.js"></script>
+  <!-- <script type="text/javascript" src="../../assets/javaScript/validation.service.js"></script> -->
+  <script type="text/javascript" src="../../assets/javaScript/api-call.service.js"></script>
+  <script type="text/javascript" src="../../assets/javaScript/dictionary-script.js"></script>
+
+</body>
+
+</html>

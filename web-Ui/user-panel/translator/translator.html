@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="../../assets/style-css/translator-style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+  integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+  crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../assets/style-css/nav-bar-style.css">
+</head>
+
+<body>
+  <div class="container">
+      <div class="navigation">
+        <ul>
+          <li id="welcome_active" class="list">
+            <a id="welcome">
+              <span class="icon">
+                <i class="fas fa-spa"></i>
+              </span>
+              <span class="text">Welcome</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="translator_active" class="list">
+            <a id="translator">
+              <span class="icon">
+                <i class="fas fa-language"></i>
+              </span>
+              <span class="text">Translator</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="dictionary_active" class="list">
+            <a id="dictionary">
+              <span class="icon">
+                <i class="fas fa-spell-check"></i>
+              </span>
+              <span class="text">Dictionary</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="profile_active" class="list">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-user-tie"></i>
+              </span>
+              <span class="text">Profile</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <li id="settings_active" class="list">
+            <a href="#">
+              <span class="icon">
+                <i class="fas fa-power-off"></i>
+              </span>
+              <span class="text">Logout</span>
+              <span class="circle"></span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+      <header>Translator</header>
+      <div class="wrapper">
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i id="from" class="fas fa-volume-up"></i>
+            <i id="from" class="fas fa-copy"></i>
+          </div>
+          <select></select>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+        <li class="row to">
+          <select></select>
+          <div class="icons">
+            <i id="to" class="fas fa-volume-up"></i>
+            <i id="to" class="fas fa-copy"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button>Translate Text</button>
+  </div>
+  <script type="text/javascript" src="../../assets/javaScript/nav-bar-script.js"></script>
+  <script type="text/javascript" src="../../assets/javaScript/api-call.service.js"></script>
+  <!-- <script type="text/javascript" src="../../assets/javaScript/validation.service.js"></script> -->
+  <script type="text/javascript" src="../../assets/javaScript/countries-object.js"></script>
+  <script type="text/javascript" src="../../assets/javaScript/translator-script.js"></script>
+
+</body>
+
+</html>
